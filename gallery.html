@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyissa's BioSite</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -12,15 +13,22 @@
    
     <div class="container">
         <!-- Header section containing the site title and/or Logo and navigation bar -->
-        <header>
-            <a href="#" class="logo">Nyissa.</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </nav>
+        <header class="navbar is-primary">
+            <div class="navbar-brand">
+                <a href="#" class="navbar-item logo">Nyissa.</a>
+                <div class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Home</a>
+                    <a class="navbar-item" href="about.html">About</a>
+                    <a class="navbar-item" href="gallery.html">Gallery</a>
+                </div>
+            </div>
         </header>
 
         <main>

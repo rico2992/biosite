@@ -1,152 +1,83 @@
-/* Import Google Font */
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Basic styles for the body */
-body {
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #E3F8FF, #E6FFFA);
-    color: #333;
-    margin: 0;
-    padding: 0;
+}
+body {
+    background: #333333;
+    color: #E3F8FF;
+    padding-top: 20px; /* Adding padding to the top of the body */
 }
 
-/* Container styles */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #A3CEF1;
-    padding: 10px 20px;
-    border-radius: 8px;
-}
-
-/* Logo styles */
-header .logo {
-    font-size: 2em;
-    color: #333;
-    text-decoration: none;
-}
-
-/* Navigation styles */
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-left: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #F1A3A3;
-}
-
-/* Main content styles */
 main {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adding margin to the top of the main content */
 }
 
-/* Footer styles */
+section {
+    margin-bottom: 40px;
+    border-top: #E3F8FF 1px solid;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #E3F8FF;
+}
+
+/* Navigation Link Styling */
+header {
+    background: #333333;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.nav-link {
+    font-weight: bold;
+    color: #E3F8FF;
+}
+
+.custom-nav-link:hover {
+    color: #F1A3A3; /* Changing color on hover to warm orange */
+}
+/* Typography Styling */
+h1, h2, h3 {
+    color: #E3F8FF; /* Setting color for headers */
+    font-weight: 700;
+}
+
+p, ul {
+    color: #E3F8FF; /* Setting color for paragraphs */
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+#hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#hero p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #A3F1CE;
+    max-width: 850px;
+    line-height: 1.3;
+}
+
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #A3F1CE;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-top: #E3F8FF 1px solid;
 }
-
-footer p {
-    margin: 0;
-    color: #333;
-}
-
-/* Responsive styles */
-
-/* Large Desktops */
-@media (min-width: 1200px) {
-    .container {
-        width: 70%;
-    }
-}
-
-/* Desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .container {
-        width: 75%;
-    }
-}
-
-/* Tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        width: 85%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    .container {
-        width: 95%;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-}
-
-/* Print */
-@media print {
-    body {
-        background: #fff;
-        color: #000;
-    }
-
-    header, footer {
-        display: none;
-    }
-
-    main {
-        box-shadow: none;
-        border-radius: 0;
-    }
+/* General Image Styling */
+img {
+    max-width: 100%; /* Ensuring images are responsive */
+    height: auto;
+    border-radius: 8px; /* Adding rounded corners to images */
+    box-shadow: #A3F1CE 0px 0px 10px; /* Adding a shadow to images */
 }
