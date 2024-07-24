@@ -43,7 +43,7 @@ header {
 }
 
 .custom-nav-link:hover {
-    color: #F1A3A3; /* Changing color on hover to warm orange */
+    color: #A3F1CE; /* Changing color on hover to warm orange */
 }
 /* Typography Styling */
 h1, h2, h3 {
@@ -55,6 +55,10 @@ p, ul {
     color: #E3F8FF; /* Setting color for paragraphs */
     font-size: 20px;
     margin: 20px 0 40px;
+}
+
+span {
+    font-weight: bold;
 }
 
 #hero h1 {
@@ -71,13 +75,145 @@ p, ul {
     line-height: 1.3;
 }
 
+/* About page custom styling */
+#rounded-image {
+    border-radius: 50%;
+    box-shadow: #A3F1CE 0px 0px 10px;
+    margin-right: 55px;
+}
+
+#about-header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#about-header p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #A3F1CE;
+    line-height: 1.3;
+}
+
+.about-content {
+    margin-left: 35px;
+}
+
+.custom-table {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Ensure table takes full width */
+    margin-bottom: 30px; /* Add margin to the bottom */
+    background-color: #333333; /* Background color to match theme */
+}
+.custom-table caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.custom-table th, .custom-table td {
+    border: 1px solid #E3F8FF; /* Border color to match theme */
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    color: #E3F8FF; /* Text color */
+}
+.custom-table th {
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 30% transparency */
+}
+.custom-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.3); /* Black background with 30% transparency */
+}
+
+table caption {
+    caption-side: top; /* Ensure caption is at the top of the table */
+    text-align: left; /* Optional: Align the caption to the left */
+    font-size: 20px;
+    font-weight: 700;
+    color: #E3F8FF;
+}
+
+#about-section {
+    padding: 30px;
+}
+
+.about-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image, .about-content {
+    width: 100%;
+}
+
+.about-image {
+    margin-bottom: 20px;
+}
+
+.desktop-view {
+    display: none;
+}
+
+.mobile-view {
+    display: block;
+}
+
+/* Footer Styling */
 footer {
     border-top: #E3F8FF 1px solid;
 }
+
 /* General Image Styling */
 img {
     max-width: 100%; /* Ensuring images are responsive */
     height: auto;
     border-radius: 8px; /* Adding rounded corners to images */
     box-shadow: #A3F1CE 0px 0px 10px; /* Adding a shadow to images */
+}
+
+/* Custom CSS for about section */
+#about-section .about-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-section img {
+    border-radius: 50%;
+    box-shadow: #A3F1CE 0px 0px 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .about-row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .about-content {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    .mobile-view {
+        display: none;
+    }
+
+    .desktop-view {
+        display: block;
+    }
+}
+
+/* Smaller Font Size for Interests Paragraphs on Mobile Devices */
+@media (max-width: 767px) {
+    .interests {
+        font-size: 1.2em; /* Smaller font size for mobile devices */
+    }
 }

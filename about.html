@@ -15,64 +15,89 @@
     <div class="container">
         <!-- Header section containing the site title and navigation bar -->
         <header class="sticky-top">
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="index.html" class="logo">Nyissa.</a>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link custom-nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link custom-nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link custom-nav-link" href="gallery.html">Gallery</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand logo">Nyissa.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link custom-nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link custom-nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link custom-nav-link" href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
+<!-- Add main content here -->
         <main>
-            <!-- Add your main content here -->
-             <section id="about-header">
-                <h1>Crafting a Future</h1>
-                <p>Nyissa is a dedicated college readiness and career counselor with a passion for helping students achieve their academic and professional goals. With a rich background in psychology and a commitment to excellence, she brings a unique blend of empathy, expertise, and creativity to her role.</p>
-             </section>
-
-             <section id="about">
-                <img src="images/family_photo1.jpg" class="about-photo" alt="Nyissa and family">
-                <div class="about-content">
-                    <h2>Unleashing Creativity through Education and Crafting</h2>
-
-                    <!-- Start of Professional Overview Table -->
-                     <table>
-                        <caption>Professional Overview of Nyissa</caption>
-                        <!-- Table Header Row -->
-                         <tr>
-                            <th>Category</th>
-                            <th>Details</th>
-                         </tr>
-                         <!-- Table Row 1 -->
-                         <tr>
-                            <td>Career Overview</td>
-                            <td>Nyissa has been making a significant impact as a college readiness and career counselor for several years at various high schools within the city of Houston. Prior to this, she served as a service coordinator for individuals with mental health issues. Throughout her career, Nyissa has excelled in every position, earning multiple performance awards and recognition for her outstanding contributions.</td>
-                        </tr>
-                        <!-- Table Row 2 -->
-                        <tr>
-                            <td>Education and Background</td>
-                            <td>Nyissa holds a Bachelor of Science degree in Psychology with a minor in Criminal Justice, which she earned in 2017. Her academic background has provided her with a strong foundation in understanding human behavior, equipping her with the skills necessary to support her students effectively.</td>
-                        </tr>
-                        <!-- Table Row 3 -->
-                         <tr>
-                            <td>Professional Skills and Expertise</td>
-                            <td>Bilingual in Spanish and English, Nyissa is known for her exceptional leadership skills, teamwork, problem-solving abilities, and attention to detail. Her ability to communicate effectively in two languages allows her to connect with a diverse range of students and their families, providing comprehensive support and guidance.</td>
-                        </tr>
-                     </table>
-
-                    <h3>Personal Interests and Hobbies</h3>
-                    <p>Outside of her professional life, Nyissa is an avid crafter. She enjoys creating decorative baskets, trees, door wreaths, and other handmade items. Her love for crafting not only serves as a creative outlet but also reflects her patience and attention to detail, qualities that she brings to her counseling role.</p>
-
-                    <h3>Inspirations and Goals</h3>
-                    <p>Nyissa's passion for education and her desire to make a difference in the lives of students led her to become a career advisor. She integrates her crafting skills into her professional life, using creativity to engage and inspire her students. Raised in the Rio Grande Valley in a small town called Weslaco, Nyissa values her family deeply. She cherishes spending time with her family, a loving boyfriend, and their 18-month-old son when she is not working or crafting.</p>
-
+            <!-- About Header Section -->
+            <section id="about-header" class="row mt-3">
+                <div class="col-md-4 col-lg-6 d-flex align-items-center">
+                    <h1 class="mb-0">Crafting a Future</h1>
                 </div>
+                <div class="col-md-8 col-lg-6 d-flex align-items-center">
+                    <p>Nyissa is a dedicated college readiness and career counselor with a passion for helping students achieve their academic and professional goals. With a rich background in psychology and a commitment to excellence, she brings a unique blend of empathy, expertise, and creativity to her role.</p>
+                </div>
+            </section>
+            
+            <!-- About Section -->
+            <section id="about-section" class="mt-5">
+                <div class="about-row">
+                    <!-- Image Column -->
+                    <div class="about-image">
+                        <img src="images/family_photo1.jpg" id="rounded-image" alt="Nyissa and family">
+                    </div>
+                    <!-- Content Column -->
+                    <div class="about-content">
+                        <h2>Unleashing Creativity through Education and Crafting</h2>
 
-             </section>
+                        <!-- Mobile View -->
+                        <div class="mobile-view">
+                            <h3>Professional Overview</h3>
+                            <p><span>Career Overview:</span> Nyissa has been making a significant impact as a college readiness and career counselor for several years at various high schools within the city of Houston.</p>
+                            <p><span>Education and Background:</span> Nyissa holds a Bachelor of Science degree in Psychology with a minor in Criminal Justice, which she earned in 2017.</p>
+                            <p><span>Professional Skills and Expertise:</span> Bilingual in Spanish and English, Nyissa is known for her exceptional leadership skills, teamwork, problem-solving abilities, and attention to detail.</p>
+                        </div>
+
+                        <!-- Tablet/Desktop View -->
+                        <div class="desktop-view">
+                            <table class="custom-table">
+                                <caption>Professional Overview of Nyissa</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Career Overview</td>
+                                        <td>Nyissa has been making a significant impact as a college readiness and career counselor for several years at various high schools within the city of Houston. Prior to this, she served as a service coordinator for individuals with mental health issues. Throughout her career, Nyissa has excelled in every position, earning multiple performance awards and recognition for her outstanding contributions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Education and Background</td>
+                                        <td>Nyissa holds a Bachelor of Science degree in Psychology with a minor in Criminal Justice, which she earned in 2017. Her academic background has provided her with a strong foundation in understanding human behavior, equipping her with the skills necessary to support her students effectively.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional Skills and Expertise</td>
+                                        <td>Bilingual in Spanish and English, Nyissa is known for her exceptional leadership skills, teamwork, problem-solving abilities, and attention to detail. Her ability to communicate effectively in two languages allows her to connect with a diverse range of students and their families, providing comprehensive support and guidance.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Personal Interests and Hobbies</h3>
+                        <p class="interests">Outside of her professional life, Nyissa is an avid crafter. She enjoys creating decorative baskets, trees, door wreaths, and other handmade items. Her love for crafting not only serves as a creative outlet but also reflects her patience and attention to detail, qualities that she brings to her counseling role.</p>
+
+                        <h3>Inspirations and Goals</h3>
+                        <p class="interests">Nyissa's passion for education and her desire to make a difference in the lives of students led her to become a career advisor. She integrates her crafting skills into her professional life, using creativity to engage and inspire her students. Raised in the Rio Grande Valley in a small town called Weslaco, Nyissa values her family deeply. She cherishes spending time with her family, a loving boyfriend, and their 18-month-old son when she is not working or crafting.</p>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
