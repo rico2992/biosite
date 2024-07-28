@@ -43,7 +43,7 @@ header {
 }
 
 .custom-nav-link:hover {
-    color: #A3F1CE; /* Changing color on hover to warm orange */
+    color: #A3F1CE; /* Changing color on hover*/
 }
 /* Typography Styling */
 h1, h2, h3 {
